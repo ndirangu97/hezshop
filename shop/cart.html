@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hez-Shop/ Cart</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">HezShop</div>
+        <nav>
+          <ul id="menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./products.html">PRODUCTS</a></li>
+            <li><a href="./productdetails.html">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">ACCOUNT</a></li>
+          </ul>
+        </nav>
+        <img src="./images/cart.png" width="30px" height="30px" />
+        <img src="./images/menu.png" class="menuIcon" onclick="menuToggle()" />
+      </div>
+    </div>
+    <div class="smallContainer cartPage">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartInfo">
+                        <img src="./images/buy-1.jpg" >
+                        <div>
+                            <p>Printed Shirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+               <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartInfo">
+                        <img src="./images/buy-2.jpg" >
+                        <div>
+                            <p>Printed Shirt</p>
+                            <small>Price: $30.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+               <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cartInfo">
+                        <img src="./images/buy-3.jpg" >
+                        <div>
+                            <p>Printed Shirt</p>
+                            <small>Price: $40.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+               <td><input type="number" value="1"></td>
+               <td>$50.00</td>
+            </tr>
+        </table>
+        <div class="totalPrice">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$0.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footerCol-1">
+            <h3>Download our app</h3>
+            <p>Download App for Android and ios mobile phone</p>
+            <div class="appLogo">
+              <img src="./images/play-store.png" />
+              <img src="./images/app-store.png" />
+            </div>
+          </div>
+          <div class="footerCol-2">
+            <img src="./images/logo-white.png" />
+            <p>
+              Our Purpose Is To Sustainability Make The Pleasure and Beneficts
+              of Sport Accessible to the Many
+            </p>
+          </div>
+          <div class="footerCol-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footerCol-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2021-Hez Shop</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  var menuI = document.getElementById("menu");
+  menuI.style.maxHeight = "0px";
+
+  function menuToggle() {
+    if (menuI.style.maxHeight == "0px") {
+      menuI.style.maxHeight = "200px";
+    } else {
+      menuI.style.maxHeight = "0px";
+    }
+  }
+</script>
